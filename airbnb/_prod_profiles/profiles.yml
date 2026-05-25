@@ -1,0 +1,24 @@
+airbnb:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: STQTCFJ-AB07180
+      user: dbt
+      password: dbtPassword123
+      role: TRANSFORM
+      database: AIRBNB
+      schema: dev
+      threads: 4
+      client_session_keep_alive: false
+
+    prod:
+      type: snowflake
+      account: STQTCFJ-AB07180
+      user: dbt
+      password: dbtPassword123
+      role: TRANSFORM
+      database: AIRBNB
+      schema: prod
+      threads: 4
+      client_session_keep_alive: false
