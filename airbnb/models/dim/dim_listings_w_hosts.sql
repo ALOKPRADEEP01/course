@@ -8,7 +8,7 @@ l AS (
 h AS (
     SELECT * 
     FROM {{ ref('dim_host_cleansed') }}
-    -- We are only adding the `, v=2` part at the Model Versioning section
+    -- Removed the nonstandard `v=2` ref argument and fixed the model name
 )
 
 SELECT 
